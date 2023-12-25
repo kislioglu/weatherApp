@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-sunny{
+    background-image: url('../weatherconditionimgs/giphy.gif') ;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
