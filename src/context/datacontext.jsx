@@ -10,12 +10,11 @@ const DataContext = createContext();
     const baseUrl = "http://api.weatherapi.com/v1/"
 
     const fetchData = async function(city) {
-        let res =  await fetch(baseUrl + `current.json?key=7456bbcf39164b58bce125218231312&q=${city}`)
-        res = await res.json()
-        setData(res)
-        
+        let resDays =  await fetch(baseUrl + `forecast.json?key=7456bbcf39164b58bce125218231312&q=${city}&days=7`)
+       
+        resDays = await resDays.json()
+        setData({resDays})
     }
-    
     return <DataContext.Provider value={{data,fetchData}}>{children}</DataContext.Provider>
  }
  

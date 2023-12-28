@@ -4,7 +4,14 @@
 
 
 .bg-sunny{
-    background-image: url('../weatherconditionimgs/giphy.gif') ;
+    background-image: url('../weatherconditionimgs/sunny.png') ;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.txt-black{
+    color: black;
+}
+.brd-black{
+    border-color: black;
 }
